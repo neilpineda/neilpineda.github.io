@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, p, a, .row, .main-container, .long-container, body {
 
 #load-screen {
   background-color: #72C9B9;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   overflow: hidden;
   position: fixed;
@@ -50,6 +50,9 @@ h1, h2, h3, h4, h5, p, a, .row, .main-container, .long-container, body {
     @media screen and (max-width: 414px) {
       #load-screen h3 {
         font-size: 30px; } }
+    @media screen and (max-width: 320px) {
+      #load-screen h3 {
+        top: 40%; } }
   #load-screen #sleepy-icon {
     position: absolute;
     top: -20%;
@@ -102,7 +105,7 @@ h1, h2, h3, h4, h5, p, a, .row, .main-container, .long-container, body {
       #load-screen .load-svg-container {
         width: 60vw;
         height: 60vw;
-        top: 82%; } }
+        top: 80%; } }
 
 @-webkit-keyframes sleep {
   0% {
