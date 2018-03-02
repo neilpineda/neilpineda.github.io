@@ -438,40 +438,44 @@ h1, h2, h3, h4, h5, p, a, .row, .main-container, .long-container, body {
       animation: headSwing ease-in-out 8s infinite;
       -webkit-animation-delay: 2s;
       animation-delay: 2s; }
+      @media screen and (max-width: 1024px) {
+        .home #chibi-me #chibi-head {
+          -webkit-animation: none;
+          animation: none; } }
 
 @-webkit-keyframes headSwing {
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0); }
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0); }
   5% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg); }
+    -webkit-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg); }
   40% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg); }
+    -webkit-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg); }
   45% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0); }
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0); }
   100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0); } }
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0); } }
 
 @keyframes headSwing {
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0); }
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0); }
   5% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg); }
+    -webkit-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg); }
   40% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg); }
+    -webkit-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg); }
   45% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0); }
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0); }
   100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0); } }
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0); } }
     .home #chibi-me #chibi-eyes ellipse {
       -webkit-animation: eyeSnap ease-in-out 5s infinite;
       animation: eyeSnap ease-in-out 5s infinite; }
